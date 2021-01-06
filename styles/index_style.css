@@ -1,5 +1,5 @@
 img{
-  width: 45px;
+  width: 50px;
   height: 100%;
 }
 
@@ -39,7 +39,8 @@ body {
 
 @media (min-width: 572px) {
   .main {
-    margin-left: var(--sidebar-width);
+    /*margin-left: var(--sidebar-width);*/
+    margin-left:11%;
   }
 }
 

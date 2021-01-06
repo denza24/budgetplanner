@@ -69,7 +69,8 @@
 	.sidebar {
 		height: 100vh;
 		left: 0;
-		width: var(--sidebar-width);
+		/*width: var(--sidebar-width);*/
+		width:9%;
 	
 	}
 
