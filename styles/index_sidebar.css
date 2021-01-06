@@ -2,10 +2,12 @@
 	background-color: #003748;
 	position: fixed;
 	transition: width 0.2s ease;
+	z-index:10000;
 }
 
 .sidebar nav {
 	height: 100%;
+
 }
 
 .sidebar .sidebar__nav {
@@ -27,7 +29,7 @@
 
 .sidebar .sidebar__nav .sidebar__nav__link:hover {
 	background-color: rgba(0, 0, 0, 0.15);
-	color: #80f;
+	color: magenta;
 }
 
 .sidebar .sidebar__nav .sidebar__nav__text {
@@ -35,6 +37,7 @@
 	margin-left: 10px;
 	margin-right: auto;
 	white-space: nowrap;
+	
 }
 
 .sidebar .sidebar__nav i {
@@ -67,12 +70,13 @@
 	.sidebar {
 		height: 100vh;
 		left: 0;
-		width: var(--sidebar-width);
+		/*width: var(--sidebar-width);*/
+		width:10%;
 	
 	}
 
 	.sidebar:hover {
-		width: 14rem;
+		width: 16rem;
 	}
 
 	.sidebar .sidebar__nav {
@@ -101,4 +105,5 @@
 	.sidebar {
 		overflow-y: scroll;
 	}
+
 }
