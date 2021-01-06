@@ -2,6 +2,7 @@
 	background-color: #003748;
 	position: fixed;
 	transition: width 0.2s ease;
+	z-index:10000;
 }
 
 .sidebar nav {
@@ -70,12 +71,12 @@
 		height: 100vh;
 		left: 0;
 		/*width: var(--sidebar-width);*/
-		width:9%;
+		width:10%;
 	
 	}
 
 	.sidebar:hover {
-		width: 14rem;
+		width: 16rem;
 	}
 
 	.sidebar .sidebar__nav {

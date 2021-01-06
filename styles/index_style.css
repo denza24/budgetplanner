@@ -42,6 +42,7 @@ body {
     /*margin-left: var(--sidebar-width);*/
     margin-left:11%;
   }
+  
 }
 
 @media (min-width: 992px) {
