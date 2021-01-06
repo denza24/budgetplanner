@@ -44,6 +44,7 @@ img.avatar {
 
 .container {
   padding:20px;
+ 
 }
 
 span.psw {
@@ -57,12 +58,16 @@ span.psw {
 }
 .right-panel{
     width: 640px;
+   padding: 16px;
+
 }
 .container-box{
     display: flex;
 
 
-
+}
+.links{
+    margin-top: 40px;
 }
 .fb {
     background-color: #3B5998;
@@ -89,6 +94,12 @@ span.psw {
   font-size: 17px;
   line-height: 20px;
   text-decoration: none; /* remove underline from anchors */
+  box-sizing: border-box;
+}
+.title{
+    
+    margin: auto;
+    width: 100px;
 }
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {

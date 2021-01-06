@@ -17,24 +17,29 @@
             <a href="#"><img src="/images/back-arrow-1767531-1502435.png" width="50px" alt=""></a>
 
        <h3>Sign in using connected accounts: </h3>
-          <div >
-            <a href="#" class="fb btn">
-              <i class="fa fa-facebook fa-fw"></i> Login with Facebook
-             </a>
-            <a href="#" class="twitter btn">
-              <i class="fa fa-twitter fa-fw"></i> Login with Twitter
-            </a>
-            <a href="#" class="google btn"><i class="fa fa-google fa-fw">
-              </i> Login with Google+
-            </a>
+     
+       <div class="links">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Facebook
+         </a>
+        <a href="#" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i> Twitter
+        </a>
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+          </i> Google
+        </a>
+       </div>
+            
           </div>
 
-        </div>
+      
 
         <div class="right-panel">
           <form action="/action_page.php" method="post">
             
-            <h2>Sign in</h2>
+              <h2 class="title">Sign in</h2>
+
+           
   
             <div class="container">
               <label for="uname"><b>Username</b></label>
@@ -47,11 +52,13 @@
               <label>
                 <input type="checkbox" checked="checked" name="remember"> Remember me
               </label>
+           
+              <div>
+                <button type="button" class="cancelbtn">Cancel</button>
+                <span class="psw"> <a href="#">Forgot password?</a></span>
+              </div>
+              
             </div>
-          
-            <div class="container" style="background-color:#f1f1f1">
-              <button type="button" class="cancelbtn">Cancel</button>
-              <span class="psw">Forgot <a href="#">password?</a></span>
             </div>
           </form>
 
