@@ -12,6 +12,10 @@ body {
   background: #eaeaea;
 }
 
+.wrapper{
+  margin-left:6%;
+}
+
 /* .wrapper{
     margin-left:11%;
 } */

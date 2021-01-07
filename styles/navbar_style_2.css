@@ -7,7 +7,6 @@
 
 .sidebar nav {
 	height: 100%;
-
 }
 
 .sidebar .sidebar__nav {
@@ -37,7 +36,7 @@
 	margin-left: 10px;
 	margin-right: auto;
 	white-space: nowrap;
-	
+	padding: 5px 10px;
 }
 
 .sidebar .sidebar__nav i {
@@ -71,12 +70,12 @@
 		height: 100vh;
 		left: 0;
 		/*width: var(--sidebar-width);*/
-		width:10%;
+		width:6%;
 	
 	}
 
 	.sidebar:hover {
-		width: 16rem;
+		width: 13%;
 	}
 
 	.sidebar .sidebar__nav {
