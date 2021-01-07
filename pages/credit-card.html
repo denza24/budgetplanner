@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Debts manager</title>
+    <link rel="stylesheet" href="../styles/debts_style.css">
+
+    <!-- Css dugme -->
+    <link rel="stylesheet" href="../styles/btn-add_style.css">
+
+<body>
+    </head>
+
+    <body>
+
+        <!--Navigation bar-->
+        <div id="nav-placeholder">
+
+
+
+        </div>
+        <!--end of Navigation bar-->
+
+
+
+        <div class="wrapper">
+            <div class="header">
+                <div class="title">
+                    CREDIT CARD MANAGER
+                </div>
+
+                <div class="search_box">
+                    <input type="text" id="search_input" placeholder="Fliter Table Using Names">
+                </div>
+            </div>
+
+            <div class="table_wrap">
+                <div class="table_header">
+                    <ul>
+                        <li>
+                            <div class="item">
+                                <div class="name">
+                                    <span>BANK NAME</span>
+                                </div>
+                                <div class="phone">
+                                    <span>CARD NUMBER</span>
+                                </div>
+                                <div class="phone">
+                                    <span>TYPE</span>
+                                </div>
+                                <div class="phone">
+                                    <span>DATE ADDED</span>
+                                </div>
+                                <div class="phone">
+                                    <span>TOTAL</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="table_body">
+                    <ul>
+                        <li>
+                            <div class="item">
+                                <div class="name">
+                                    <span>Bank A</span>
+                                </div>
+                                <div class="phone">
+                                    <span>6928371</span>
+                                </div>
+                                <div class="phone">
+                                    <span>MasterCard</span>
+                                </div>
+                                <div class="phone">
+                                    <span >April 29, 2019 </span>
+                                </div>
+                                <div class="phone">
+                                    <span>235,40 BAM</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="name">
+                                    <span>Bank B</span>
+                                </div>
+                                <div class="phone">
+                                    <span>2223617</span>
+                                </div>
+                                <div class="phone">
+                                    <span>VISA</span>
+                                </div>
+                                <div class="phone">
+                                    <span >January 1, 2019 </span>
+                                </div>
+                                <div class="phone">
+                                    <span>1037,20 BAM</span>
+                                  </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="name">
+                                    <span>Bank C</span>
+                                </div>
+                                <div class="phone">
+                                    <span>9732100</span>
+                                </div>
+                                <div class="phone">
+                                    <span>AMEX</span>
+                                </div>
+                                <div class="phone">
+                                    <span>May 6, 2020</span>
+                                </div>
+                                <div class="phone">
+                                    <span>37,20 BAM</span>
+                                  </div>
+                            </div>
+                        </li>
+                </div>
+
+                <div id="divDugme">
+                    <button class="w3-button w3-xlarge w3-circle w3-red w3-card-4 dodatak">+</button>
+                    <span id="spanDugme">Add a new card</span>
+                </div>
+
+                <script src="../scripts/debts_script.js"></script>
+
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+            <script>
+                $(function () {
+                    $("#nav-placeholder").load("navbar.html");
+                });
+            </script>
+
+
+    </body>
+
+</html>

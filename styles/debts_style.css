@@ -13,8 +13,12 @@ body {
 }
 
 .wrapper{
-    margin-left:11%;
+  margin-left:6%;
 }
+
+/* .wrapper{
+    margin-left:11%;
+} */
 .wrapper .header {
   background: #29a5d8;
 }
@@ -142,3 +146,18 @@ body {
   background: #ffdbd6;
   color: #e87060;
 }
+
+/*dugme*/
+
+#divDugme{
+  margin-top:15px;
+  margin-left:80%;
+  padding:5px;
+  
+}
+
+#spanDugme{
+  margin-left:10px;
+
+}
+
