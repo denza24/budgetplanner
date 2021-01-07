@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cash</title>
     <link href="../styles/cash.css" rel="stylesheet">
-    
+
 </head>
 <body>
     
@@ -23,10 +23,7 @@
 
             <div class="outer-container">
 
-                <div class="outer">
-                    <h4 class="label">Balance:</h4>
-                    <input type="text" class="value" id="balance" value="537,00">
-                </div>
+            
                 <div class="outer">
                     <h4 class="label">Income:</h4>
                     <input type="text" class="value" id="balance" value="1790,22">
@@ -36,6 +33,13 @@
                      <input type="text" class="value" id="balance" value="1253,22">
                 </div>
 
+                <hr class="row-line">
+
+                <div class="outer">
+                    <h4 class="label">Balance:</h4>
+                    <input type="text" class="value" id="balance" value="537,00">
+                </div>
+
             </div>
            
             <div class="box-container">
@@ -43,16 +47,56 @@
 
                 <div class="box">
                    
-                    <a href="" class="box-btn"> <img src="../images/cash/down-arrow.png" alt="">Add <br>Income</a>
+                    <a href="" class="box-btn" id="myBtn"> 
+                        <img src="../images/cash/down-arrow.png" alt="">
+                        Add <br>Income</a>
     
                 </div>
     
                 <div class="box">
-                    <a href="" class="box-btn" id="expense-btn"><img src="../images/cash/down-arrow.png" class="expense-img"
+                    <a href="" class="box-btn" id="expense-btn">
+                        <img src="../images/cash/down-arrow.png" class="expense-img"
                         alt="">Add Expense</a>
     
                 </div>
             </div>
+
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Add income </h2>
+                </div>
+                <div class="modal-body">
+
+                    <div class="modal-box">
+
+                        <p class="modal-box-label">Choose category: </p> 
+                        <select>
+                            <option>Income</option>
+                            <option>Sale</option>
+                            <option>Tax</option>
+                            <option>Child care</option>
+                            <option>Gift</option>
+                        </select>
+                    </div>
+
+                    <div class="modal-box">
+                        <p class="modal-box-label">Enter amount: </p>
+                        <input type="number">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#"  id="btnDone" class="btn">Done</a>
+                </div>
+                </div>
+            
+            </div>
+
 
 
         </div>
@@ -73,5 +117,37 @@
           $("#nav-placeholder").load("navbar.html");
         });
       </script>
+      <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        var btnDone = document.getElementById("btnDone");
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function(e) {
+          modal.style.display = "block";
+          e.preventDefault();
+        }
+        
+        btnDone.onclick = function(e){
+           
+            modal.style.display="none";
+        }
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
 </body>
 </html>
