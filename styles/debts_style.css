@@ -143,3 +143,17 @@ body {
   color: #e87060;
 }
 
+/*dugme*/
+
+#divDugme{
+  margin-top:10px;
+  margin-left:70%;
+  padding:5px;
+  
+}
+
+#spanDugme{
+  margin-left:10px;
+
+}
+
