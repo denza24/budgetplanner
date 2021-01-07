@@ -12,9 +12,9 @@ body {
   background: #eaeaea;
 }
 
-.wrapper{
+/* .wrapper{
     margin-left:11%;
-}
+} */
 .wrapper .header {
   background: #29a5d8;
 }
@@ -142,3 +142,4 @@ body {
   background: #ffdbd6;
   color: #e87060;
 }
+
