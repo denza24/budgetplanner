@@ -1,0 +1,50 @@
+html, body { height: 100%; padding: 0; margin: 0; }
+
+div{
+    box-sizing: border-box;
+}
+div.wrapper {width: 94%; 
+    height: 100%; 
+    margin-left:6%; 
+    background: #29a5d8;
+}
+
+
+.wrapper .title {
+    padding: 50px 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+    position:absolute;
+    top:10px;
+    left:47%
+  }
+
+#kvadrant{
+     width:50%;
+     height:50%;
+    float: left;
+    
+}
+.ram{
+    width: 640px; /* Can be in percentage also. */
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    top:110px;
+}
+
+  img.displayed {
+    display: block;
+    margin: auto;
+    width: 30%;
+   height: 30%;
+} 
+p{
+    color:white;
+    text-align: center;
+    font-size:x-large;
+}
+
