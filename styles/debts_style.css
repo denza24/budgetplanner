@@ -162,5 +162,77 @@ body {
 }
 
 .row:hover{
-background-color: rgba(99, 240, 169, 0.692)!important;
+background-color: #63f0a9b0!important;
 }
+
+
+/*
+DATE PICKER
+*/
+
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+/* custom styles */
+body {
+  padding: 4em;
+  background: #e5e5e5;
+  font: 13px/1.4 Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+label{
+  color: #fff;
+  font-size: 16px;
+}
+.date_box{
+
+  max-width: 1000px;
+  background: #29a5d8;
+  margin: 0 auto;
+  padding: 25px 0 50px;
+  border-radius: 3px;
+}
+.datum {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+  width: 190px;
+  margin-right:40px;
+}
+
+
+/*SEARCH BUTTON*/
+
+
+
+
+ .btn {
+  position: relative; 
+  top:16px;
+  left:30px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #63f0a9b0;
+  color: black;
+  font-size: 16px;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  width:90px;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
