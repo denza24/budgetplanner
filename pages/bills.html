@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bills manager</title>
+  <link rel="stylesheet" href="../styles/debts_style.css">
+
+  <!-- Css dugme -->
+  <link rel="stylesheet" href="../styles/btn-add_style.css">
+
+<body>
+  </head>
+
+  <body>
+
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+
+
+
+    </div>
+    <!--end of Navigation bar-->
+
+
+
+    <div class="wrapper">
+      <div class="header">
+        <div class="title">
+          BILLS MANAGER
+        </div>
+
+        <div class="search_box">
+          <input type="text" id="search_input" placeholder="Fliter Table Using Names">
+        </div>
+      </div>
+
+      <div class="table_wrap">
+        <div class="table_header">
+          <ul>
+            <li>
+              <div class="item">
+                <div class="name">
+                  <span>NAME</span>
+                </div>
+                <div class="phone">
+                  <span>EXPECTED</span>
+                </div>
+                <div class="phone">
+                  <span>REALITY</span>
+                </div>
+              <div class="phone">
+                <span>DIFFRENCE</span>
+              </div>
+              <div class="phone">
+                <span>CATEGORY</span>
+              </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="table_body">
+          <ul>
+            <li>
+              <div class="item row">
+                <div class="name">
+                  <span>Electricity</span>
+                </div>
+                <div class="phone">
+                    <span>105,00 BAM</span>
+                  </div>
+                <div class="phone">
+                  <span>96,00 BAM</span>
+                </div>
+                <div class="phone">
+                  <span>+9,00 BAM</span>
+                </div>
+                <div class="status">
+                    <span class="open">Variable</span>
+                  </div>
+              </div>
+            </li>
+            <li>
+                <div class="item row">
+                    <div class="name">
+                      <span>Water</span>
+                    </div>
+                    <div class="phone">
+                        <span>60,00 BAM</span>
+                      </div>
+                    <div class="phone">
+                      <span>71,00 BAM</span>
+                    </div>
+                    <div class="phone">
+                      <span>-11,00 BAM</span>
+                    </div>
+                    <div class="status">
+                        <span class="open">Variable</span>
+                      </div>
+                  </div>
+            </li>
+            <li>
+                <div class="item row">
+                    <div class="name">
+                      <span>Waste</span>
+                    </div>
+                    <div class="phone">
+                      <span>15,00 BAM</span>
+                    </div>
+                    <div class="phone">
+                        <span>15,00 BAM</span>
+                      </div>
+                    <div class="phone">
+                      <span>0,00 BAM</span>
+                    </div>
+                    <div class="status">
+                      <span class="hold">Fixed</span>
+                    </div>
+                  </div>
+            </li>
+            <li>
+                <div class="item row">
+                    <div class="name">
+                      <span>Heating</span>
+                    </div>
+                    <div class="phone">
+                      <span>106,00 BAM</span>
+                    </div>
+                    <div class="phone">
+                        <span>120,00 BAM</span>
+                      </div>
+                    <div class="phone">
+                      <span>-14,00 BAM</span>
+                    </div>
+                    <div class="status">
+                      <span class="canceled">Periodic</span>
+                    </div>      
+                  </div>
+              </div>
+            </li>
+        </div>
+
+        <div id="divDugme">
+          <button class="w3-button w3-xlarge w3-circle w3-red w3-card-4 dodatak">+</button>
+          <span id="spanDugme">Add new bill</span>
+        </div>
+
+        <script src="../scripts/debts_script.js"></script>
+
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+      <script>
+        $(function () {
+          $("#nav-placeholder").load("navbar.html");
+        });
+      </script>
+
+
+  </body>
+
+</html>

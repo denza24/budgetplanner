@@ -161,4 +161,6 @@ body {
 
 }
 
-
+.row:hover{
+background-color: rgba(99, 240, 169, 0.692)!important;
+}
