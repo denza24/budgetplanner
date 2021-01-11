@@ -2,25 +2,32 @@ body{
     margin: 0px;
     
 }
-.main{
+.wrapper{
     box-sizing: border-box;
     background-color: #e9f1f7;
+    margin-left: 6%;
 }
-.title{
-    margin: auto;
-    width: 200px;
-    text-align: center;
 
+.title {
+    padding: 50px 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+  }
+
+header{
+  background-color:#29a5d8;
 }
 .container{
     
-    height: 900px;
-    padding: 5%;
+    
 
 }
 .outer-container{
 
-    margin-top: 5%;
+    margin: 50px auto 0;
+    max-width: 1000px;
 }
 .outer{
     width: 40%;
@@ -99,7 +106,7 @@ body{
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 60%;
+    width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -143,6 +150,7 @@ body{
   .modal-body {
       padding: 16px;
         display: flex;
+        flex-wrap: wrap;
 }
   
   .modal-footer {
@@ -173,3 +181,55 @@ body{
     text-align: center;
     display: inline-block;
   }
+  #amount{
+    line-height: 30px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+   
+ 
+  }
+  .date_box{
+
+    max-width: 1000px;
+    background: #29a5d8;
+    margin: 0 auto;
+    padding: 25px 0 50px;
+    border-radius: 3px;
+  }
+  .datum {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 3px 5px;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+    width: 190px;
+    margin-right:40px;
+  }
+  label{
+    color: #fff;
+    font-size: 16px;
+  }
+  .btn {
+    position: relative; 
+    top:16px;
+    left:30px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #63f0a9b0;
+    color: black;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    width:90px;
+  }
+  
+  .btn:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  
