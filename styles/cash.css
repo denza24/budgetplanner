@@ -27,7 +27,7 @@ header{
 }
 .outer-container{
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 950px;
     padding-bottom: 20%;
 }
 .summary{
@@ -40,7 +40,7 @@ header{
 
 }
 .section-title{
-  text-align: center;
+
   margin: 60px 0;
   width: 100%;
 }
@@ -193,6 +193,11 @@ header{
       display: inline-block;
       text-align: center;
   }
+  .modal-amount{
+    width: 60%;
+    margin: 20px auto;
+    
+  }
   .btn{
       background-color: #008db1;
       padding: 12px 20px;
@@ -266,12 +271,13 @@ header{
 /* Table */
 
 .table_wrap {
-  width: 1000px;
+  
   margin: 50px auto 0;
 }
 
 .table_wrap ul{
   list-style-type: none;
+  padding: 0;
 }
 .table_wrap ul li .item {
   display: flex;
