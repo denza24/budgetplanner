@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cash</title>
+ 
     <link href="../styles/cash.css" rel="stylesheet">
 
 </head>
@@ -22,59 +23,218 @@
                     Cash
                 </div>
 
-                
-                <div class="date_box">
-                    <label>From</label>
-                    <input type="date" name="dateofbirth" id="dateofbirth" class="datum"> 
-                    <label>To</label>
-                    <input type="date" name="dateofbirth" id="dateofbirth" class="datum"> 
-                    
-             
-                        <button class="btn">Search</button>    
-                </div>
+               
             </header>
            
-
+           
             <div class="outer-container">
+                
+                <section class="summary">
 
-                <div class="outer">
-                    <h4 class="label">Income:</h4>
-                    <input type="text" class="value" id="balance" value="1790,22">
+                    <h2 class="section-title">Summary</h2>
+     
+                    <div class="date_box">
+                        <label>From</label>
+                        <input type="date" name="date1" id="date1" class="datum"> 
+                        <label>To</label>
+                        <input type="date" name="date2" id="date2" class="datum"> 
+                        
+                 
+                            <button class="btn">Search</button>    
+                    </div>
+                    <div class="section">
+                        <div class="outer">
+                            <h4 class="label">Income:</h4>
+                            <input type="text" class="value" id="balance" value="1790,22">
+                        </div>
+                        <div class="outer">
+                            <h4 class="label">Expense:</h4>
+                             <input type="text" class="value" id="balance" value="1253,22">
+                        </div>
+        
+                        <hr class="row-line">
+        
+                        <div class="outer">
+                            <h4 class="label">Balance:</h4>
+                            <input type="text" class="value" id="balance" value="537,00">
+                        </div>
+                    </div>
+                    <div class="section">
+                        <canvas id="myChart"></canvas>
+    
+                    </div>
+                </section>
+              
+
+                <div class="buttons-container">
+
+
+                    <div class="box">
+    
+                       
+                        <a href="" class="box-btn" id="income-btn"> 
+                            <img src="../images/cash/down-arrow.png" alt="">
+                            Add <br>Income</a>
+        
+                    </div>
+        
+                    <div class="box">
+                        <a href="" class="box-btn" id="expense-btn">
+                            <img src="../images/cash/down-arrow.png" class="expense-img"
+                            alt="">Add Expense</a>
+        
+                    </div>
                 </div>
-                <div class="outer">
-                    <h4 class="label">Spent:</h4>
-                     <input type="text" class="value" id="balance" value="1253,22">
+    
+
+                <section class="transactions">
+
+                    <h2 class="section-title">Transaction history</h2>
+            <div class="table_wrap">
+                <div class="table_header">
+                <ul>
+                    <li>
+                    <div class="item">
+                        <div class="name">
+                        <span>NAME</span>
+                        </div>
+                        <div class="phone">
+                        <span>AMOUNT</span>
+                        </div>
+                        <div class="issue">
+                        <span>DATE ADDED</span>
+                        </div>
+                        <div class="status">
+                        <span>STATUS</span>
+                        </div>
+                    </div>
+                    </li>
+                </ul>
+                </div>
+                <div class="table_body">
+                <ul>
+                    <li>
+                    <div class="item row"  id="myBtn">
+                        <div class="name">
+                        <span>Item 1</span>
+                        </div>
+                        <div class="phone">
+                        <span>120 BAM</span>
+                        </div>
+                        <div class="issue">
+                        <span>Decembar 10,2017</span>
+                        </div>
+                        <div class="status">
+                        <span class="fixed">Income</span>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="item row">
+                        <div class="name ">
+                        <span>Cash 2</span>
+                        </div>
+                        <div class="phone">
+                        <span>460,32 BAM</span>
+                        </div>
+                        <div class="issue">
+                        <span>Decembar 9,2018</span>
+                        </div>
+                        <div class="status">
+                        <span class="fixed">Income</span>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="item row">
+                        <div class="name ">
+                        <span>Item 3</span>
+                        </div>
+                        <div class="phone">
+                        <span>0,00 BAM.</span>
+                        </div>
+                        <div class="issue">
+                        <span>August 17,2019</span>
+                        </div>
+                        <div class="status">
+                        <span class="closed">Expense</span>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="item row">
+                        <div class="name">
+                        <span>Item 4</span>
+                        </div>
+                        <div class="phone">
+                        <span>800 BAM</span>
+                        </div>
+                        <div class="issue">
+                        <span>June 24,2020</span>
+                        </div>
+                        <div class="status">
+                        <span class="fixed">Income</span>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="item row">
+                        <div class="name">
+                        <span>Debt 5</span>
+                        </div>
+                        <div class="phone">
+                        <span>150,00 BAM</span>
+                        </div>
+                        <div class="issue">
+                        <span>March 7,2020</span>
+                        </div>
+                        <div class="status">
+                        <span class="closed">Expense</span>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="item row">
+                        <div class="name">
+                        <span>Debt 6</span>
+                        </div>
+                        <div class="phone">
+                        <span>155,00 BAM</span>
+                        </div>
+                        <div class="issue">
+                        <span>July 19,2020</span>
+                        </div>
+                        <div class="status">
+                        <span class="closed">Expense</span>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="item row">
+                        <div class="name">
+                        <span>Debt 7</span>
+                        </div>
+                        <div class="phone">
+                        <span>110,00 BAM</span>
+                        </div>
+                        <div class="issue">
+                        <span>August 21,2020</span>
+                        </div>
+
+                        <div class="status">
+                        <span class="closed">Expense</span>
+                        </div>
+                    </div>
+                    </li>
                 </div>
 
-                <hr class="row-line">
+                </section>
+              
 
-                <div class="outer">
-                    <h4 class="label">Balance:</h4>
-                    <input type="text" class="value" id="balance" value="537,00">
-                </div>
 
             </div>
            
-            <div class="box-container">
-
-
-                <div class="box">
-
-                   
-                    <a href="" class="box-btn" id="myBtn"> 
-                        <img src="../images/cash/down-arrow.png" alt="">
-                        Add <br>Income</a>
-    
-                </div>
-    
-                <div class="box">
-                    <a href="" class="box-btn" id="expense-btn">
-                        <img src="../images/cash/down-arrow.png" class="expense-img"
-                        alt="">Add Expense</a>
-    
-                </div>
-            </div>
-
+            
 
             <!-- The Modal -->
             <div id="myModal" class="modal">
@@ -127,16 +287,31 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
     <script>
+        $.when( $.ready ).then(function() {
+            console.log("Document ready");
+
+  // Document is ready.
+        });
         $(function () {
           $("#nav-placeholder").load("navbar.html");
         });
+
+        //dohvati datum objekt i setiraj ga na odredjeno vrijeme
+       
+
+        let date1 = new Date();
+        date1.setDate(date1.getDate() - 7);
+
+        $('#date1').val(date1.toISOString().slice(0, 10));
+        $('#date2').val(new Date().toISOString().slice(0, 10));
+
       </script>
       <script>
         // Get the modal
         var modal = document.getElementById("myModal");
         
         // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
+        var btn = document.getElementById("income-btn");
         var btnDone = document.getElementById("btnDone");
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
@@ -163,5 +338,7 @@
           }
         }
         </script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+        <script src="../scripts/cash_chart.js"></script>
 </body>
 </html>

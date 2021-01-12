@@ -6,31 +6,50 @@ body{
     box-sizing: border-box;
     background-color: #e9f1f7;
     margin-left: 6%;
+    
 }
 
 .title {
     padding: 50px 0;
     text-align: center;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 40px;
     color: #fff;
   }
 
 header{
-  background-color:#29a5d8;
+  background-color: #008db1;
 }
 .container{
     
-    
+
 
 }
 .outer-container{
+  margin: 0 auto;
+  max-width: 1000px;
+    padding-bottom: 20%;
+}
+.summary{
+  width: 100%;
+  display: flex;
+    flex-wrap: wrap;
+}
+.section{
+  width: 50%;
 
-    margin: 50px auto 0;
-    max-width: 1000px;
+}
+.section-title{
+  text-align: center;
+  margin: 60px 0;
+  width: 100%;
 }
 .outer{
-    width: 40%;
+    
+}
+.transactions{
+  border-top: 1px solid grey;
+  margin-top: 10%;
 }
 .label{
    display: inline-block;
@@ -49,7 +68,6 @@ header{
     color: #003748;
 }
 .box-btn{
-    background-color: #008db1;
     text-decoration: none;
     display: inline-block;
     color: white;
@@ -57,6 +75,9 @@ header{
     padding: 8px;
     display: flex;
     align-items: center;
+}
+.box-btn:hover{
+  transform: scale(1.2, 1.2);
 }
 .box{
 
@@ -71,16 +92,20 @@ header{
 .expense-img{
     transform: scaleY(-1);
 }
-.box-container{
+.buttons-container{
    display: flex;
    justify-content: center;
-   margin-top: 10%;
+   margin-top: 5%;
 }
 #expense-btn{
-    background-color: red;
+    background-color: #FB4B4E;
+}
+
+#income-btn{
+  background-color: #63f0a9b0;
 }
 .row-line{
-    width: 50%;
+    width: 100%;
     float: left;
 }
 
@@ -189,11 +214,11 @@ header{
    
  
   }
+
+  /*Datum*/
   .date_box{
 
     max-width: 1000px;
-    background: #29a5d8;
-    margin: 0 auto;
     padding: 25px 0 50px;
     border-radius: 3px;
   }
@@ -205,9 +230,10 @@ header{
     box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
     width: 190px;
     margin-right:40px;
+    font-weight: 600;
+    font-family: inherit;
   }
   label{
-    color: #fff;
     font-size: 16px;
   }
   .btn {
@@ -216,8 +242,8 @@ header{
     left:30px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #63f0a9b0;
-    color: black;
+    background-color:#008db1 ;
+    color: white;
     font-size: 16px;
     padding: 5px;
     border: none;
@@ -231,5 +257,120 @@ header{
     background-color: black;
     color: white;
   }
+  #myChart{
+    width: 100%;
+    display: inline-block;
+  }
   
   
+/* Table */
+
+.table_wrap {
+  width: 1000px;
+  margin: 50px auto 0;
+}
+
+.table_wrap ul{
+  list-style-type: none;
+}
+.table_wrap ul li .item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 15px 0;
+  height: 50px;
+}
+
+.table_wrap ul li .item .name,
+.table_wrap ul li .item .phone {
+  width: 20%;
+  padding: 0 15px;
+}
+
+.table_wrap ul li .item .status {
+  width: 15%;
+  padding: 0 15px;
+}
+
+.table_wrap ul li .item .issue {
+  width: 45%;
+  padding: 0 15px;
+}
+
+.table_wrap ul li .item .issue span,
+.table_wrap ul li .item .name span {
+  width: 90%;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table_header ul li .item {
+  border-bottom: 2px solid #eaeaea;
+  font-weight: 600;
+}
+
+.table_body {
+  height: 300px;
+  overflow: auto;
+}
+
+.table_body ul li .item {
+  border-bottom: 1px solid #efefef;
+}
+
+.table_body ul li .item .status span {
+  padding: 5px 20px;
+  border-radius: 25px;
+  max-width: 115px;
+  display: inline-block;
+}
+
+.table_body ul li .item .open {
+  background: #e5edfa;
+  color: #5a8ee4;
+}
+
+.table_body ul li .item .fixed {
+  background: #cff1f0;
+  color: #0dbeb6;
+}
+
+.table_body ul li .item .closed {
+  background: #fedfe5;
+  color: #ff89a0;
+}
+
+.table_body ul li .item .hold {
+  background: #fff0db;
+  color: #f59d39;
+}
+
+.table_body ul li .item .reopened {
+  background: #d6f2ff;
+  color: #29a5d8;
+}
+
+.table_body ul li .item .canceled {
+  background: #ffdbd6;
+  color: #e87060;
+}
+
+/*dugme*/
+
+#divDugme{
+  margin-top:15px;
+  margin-left:80%;
+  padding:5px;
+  
+}
+
+#spanDugme{
+  margin-left:10px;
+
+}
+
+.row:hover{
+background-color: #63f0a9b0!important;
+}
