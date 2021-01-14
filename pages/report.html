@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash</title>
+ 
+    <link href="../styles/cash.css" rel="stylesheet">
+    <link href="../styles/report.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!--Navigation bar-->
+	<div id="nav-placeholder"> </div>
+    <!--end of Navigation bar-->
+    
+    <div class="wrapper">
+
+        <div class="container">
+            
+            <header>
+                <div class="title">
+                    Report
+                </div>
+
+               
+            </header>
+           
+           
+            <div class="outer-container">
+                
+                <section class="summary">
+
+                    <h2 class="section-title">Summary</h2>
+     
+                    <div class="date_box">
+                        <label>From</label>
+                        <input type="date" name="date1" id="date1" class="datum"> 
+                        <label>To</label>
+                        <input type="date" name="date2" id="date2" class="datum"> 
+                        
+                 
+                            <button class="btn">Search</button>    
+                    </div>
+                    <div class="section">
+                        <div class="outer">
+                            <h4 class="label">Income:</h4>
+                            <input type="text" class="value" id="balance" value="1790,22">
+                        </div>
+                        <div class="outer">
+                            <h4 class="label">Expense:</h4>
+                             <input type="text" class="value" id="balance" value="1253,22">
+                        </div>
+        
+                        <hr class="row-line">
+        
+                        <div class="outer">
+                            <h4 class="label">Balance:</h4>
+                            <input type="text" class="value" id="balance" value="537,00">
+                        </div>
+                    </div>
+                    <div class="section">
+                        <canvas id="myChart"></canvas>
+    
+                    </div>
+                </section>
+              
+
+            <section class="expense-tracker">
+
+                <h2 class="section-title">Expense tracker</h2>
+
+
+                <div class="tracker-options">
+
+                    <div class="options-acc">
+                        <label>Select account: </label>
+                        <select>
+                            <option>Cash</option>
+                            <option>Total</option>
+                            <option>BankAcc1</option>
+                            <option>BankAcc2</option>
+                        </select>
+                      
+
+                    </div>
+
+                    <div class="options-view">
+
+                        <label>View by: </label>
+                        <select>
+                            <option>Percent</option>
+                            <option>Number</option>
+                        </select>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="chart-section">
+                    <div class="categories">
+
+                        <div class="select-categories">
+                            <label>Select Category: </label>
+                        </div>
+                        <div class="category">
+                            <input type="checkbox" value="All" checked >
+                            <label>All</label>
+                        </div>
+    
+                        <div class="category">
+                            <input type="checkbox" value="Groceries">
+                            <label>Groceries</label>
+                        </div>  
+                        <div class="category">
+                            <input type="checkbox" value="Bills">
+                            <label>Bills</label>
+                        </div>
+    
+                        <div class="category">
+                            <input type="checkbox" value="Transport">
+                            <label>Transport</label>
+                        </div>
+                        <div class="category">
+                            <input type="checkbox" value="Health">
+                            <label>Health</label>
+                     </div>
+                     <div class="category">
+                        <input type="checkbox" value="Family">
+                        <label>Family</label>
+                      </div>
+    
+                    </div>
+    
+    
+                    <div class="expenses-chart">
+    
+                        <canvas id="exp-chart"></canvas>
+    
+    
+    
+                    </div>
+    
+                </div>
+                
+
+            </section>
+
+
+
+
+        <section class="transactions">
+
+            <h2 class="section-title">Transaction history</h2>
+    <div class="table_wrap">
+        <div class="table_header">
+        <ul>
+            <li>
+            <div class="item">
+                <div class="name">
+                <span>NAME</span>
+                </div>
+                <div class="phone">
+                <span>AMOUNT</span>
+                </div>
+                <div class="issue">
+                <span>DATE ADDED</span>
+                </div>
+                <div class="status">
+                <span>STATUS</span>
+                </div>
+            </div>
+            </li>
+        </ul>
+        </div>
+        <div class="table_body">
+        <ul>
+            <li>
+            <div class="item row"  id="myBtn">
+                <div class="name">
+                <span>Item 1</span>
+                </div>
+                <div class="phone">
+                <span>120 BAM</span>
+                </div>
+                <div class="issue">
+                <span>Decembar 10,2017</span>
+                </div>
+                <div class="status">
+                <span class="fixed">Income</span>
+                </div>
+            </div>
+            </li>
+            <li>
+            <div class="item row">
+                <div class="name ">
+                <span>Cash 2</span>
+                </div>
+                <div class="phone">
+                <span>460,32 BAM</span>
+                </div>
+                <div class="issue">
+                <span>Decembar 9,2018</span>
+                </div>
+                <div class="status">
+                <span class="fixed">Income</span>
+                </div>
+            </div>
+            </li>
+            <li>
+            <div class="item row">
+                <div class="name ">
+                <span>Item 3</span>
+                </div>
+                <div class="phone">
+                <span>0,00 BAM.</span>
+                </div>
+                <div class="issue">
+                <span>August 17,2019</span>
+                </div>
+                <div class="status">
+                <span class="closed">Expense</span>
+                </div>
+            </div>
+            </li>
+            <li>
+            <div class="item row">
+                <div class="name">
+                <span>Item 4</span>
+                </div>
+                <div class="phone">
+                <span>800 BAM</span>
+                </div>
+                <div class="issue">
+                <span>June 24,2020</span>
+                </div>
+                <div class="status">
+                <span class="fixed">Income</span>
+                </div>
+            </div>
+            </li>
+            <li>
+            <div class="item row">
+                <div class="name">
+                <span>Debt 5</span>
+                </div>
+                <div class="phone">
+                <span>150,00 BAM</span>
+                </div>
+                <div class="issue">
+                <span>March 7,2020</span>
+                </div>
+                <div class="status">
+                <span class="closed">Expense</span>
+                </div>
+            </div>
+            </li>
+            <li>
+            <div class="item row">
+                <div class="name">
+                <span>Debt 6</span>
+                </div>
+                <div class="phone">
+                <span>155,00 BAM</span>
+                </div>
+                <div class="issue">
+                <span>July 19,2020</span>
+                </div>
+                <div class="status">
+                <span class="closed">Expense</span>
+                </div>
+            </div>
+            </li>
+            <li>
+            <div class="item row">
+                <div class="name">
+                <span>Debt 7</span>
+                </div>
+                <div class="phone">
+                <span>110,00 BAM</span>
+                </div>
+                <div class="issue">
+                <span>August 21,2020</span>
+                </div>
+
+                <div class="status">
+                <span class="closed">Expense</span>
+                </div>
+            </div>
+            </li>
+        </div>
+
+        </section>
+              
+
+
+            </div>
+           
+            
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 id="modal-title"> </h2>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-box">
+                        <p class="modal-box-label">Date: </p>
+                        <input type="date" id="modal-date">
+                    </div>
+                    <div class="modal-box">
+
+                        <p class="modal-box-label">Choose category: </p> 
+                        <select>
+                            <option>Income</option>
+                            <option>Sale</option>
+                            <option>Tax</option>
+                            <option>Child care</option>
+                            <option>Gift</option>
+                        </select>
+                    </div>
+
+                    <div class="modal-amount">
+                        <p class="modal-box-label">Enter amount: </p>
+                        <input type="number" id="amount">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#"  id="btnDone" class="btn">Done</a>
+                </div>
+                </div>
+            
+            </div>
+
+
+
+        </div>
+
+    </div>
+  
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+    <script>
+        $.when( $.ready ).then(function() {
+            console.log("Document ready");
+
+  // Document is ready.
+        });
+        $(function () {
+          $("#nav-placeholder").load("navbar.html");
+        });
+
+        //dohvati datum objekt i setiraj ga na odredjeno vrijeme
+       
+
+        let date1 = new Date();
+        date1.setDate(date1.getDate() - 30);
+
+        $('#date1').val(date1.toISOString().slice(0, 10));
+        $('#date2').val(new Date().toISOString().slice(0, 10));
+
+
+        $('#modal-date').val(new Date().toISOString().slice(0, 10));
+
+      </script>
+   
+      <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn1 = document.getElementById("income-btn");
+        var btn2 = document.getElementById("expense-btn");
+        var btnDone = document.getElementById("btnDone");
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn1.onclick = openModal;
+        btn2.onclick = openModal;
+        
+        function openModal(e) {
+
+            if(e.target.id == 'income-btn'){
+                document.getElementById('modal-title').innerText = "Add income";
+            }
+            else
+            document.getElementById('modal-title').innerText = "Add Expense";
+
+
+
+          modal.style.display = "block";
+          e.preventDefault();
+        }
+        
+        btnDone.onclick = HideModal;
+        
+        function HideModal(e){
+           
+            modal.style.display="none";
+        }
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            HideModal();
+          }
+        }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+        <script src="../scripts/cash_chart.js"></script>
+        <script src="../scripts/report_chart_expense.js"></script>
+</body>
+</html>

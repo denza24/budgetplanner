@@ -1,0 +1,10 @@
+Colors:
+
+plava
+button: #008db1
+
+zelena
+income hover: #63f0a9b0
+
+crvena:
+#FB4B4E

@@ -1,0 +1,42 @@
+
+
+/* EXPENSE TRACKER */
+
+.tracker-options{
+
+}
+
+.options-acc, .options-view{
+    display: inline-block;
+    width: 30%;
+}
+
+.tracker-options select{
+
+    padding: 4px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 16px;
+}
+.chart-section{
+    
+    margin: 50px 0;
+}
+.categories{
+    padding: 0 30px;
+    width: 30%;
+    display: inline-block;
+}
+
+.category{
+    margin-top: 20px;
+}
+.expenses-chart{
+    width: 60%;
+    display: inline-block;
+    margin-left: 5%;
+
+}
+#exp-chart{
+    width: 100%!important;
+}
