@@ -12,8 +12,7 @@ body {
 	align-items: center;
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
-	height: 100vh;
-	margin: -20px 0 50px;
+	margin: 20px 0 100px;
 }
 
 h1 {
@@ -46,8 +45,7 @@ a {
 
 button {
 	border-radius: 20px;
-	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
+	background-color: #e70004;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -160,9 +158,9 @@ input {
 }
 
 .overlay {
-	background: #FF416C;
-	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background: #29a5d8;
+	background: -webkit-linear-gradient(to right, #29a5d8, #003748);
+	background: linear-gradient(to right, #29a5d8, #003748);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -259,7 +257,7 @@ header {
 	text-align: center;
   }
   .logo {
-	width: 200px;
-	height: 150px;
+	width: 100px;
+	height: 80px;
 	text-align: center;
   }

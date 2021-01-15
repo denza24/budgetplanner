@@ -2,9 +2,11 @@ Colors:
 
 plava
 button: #008db1
+header: 29a5d8
 
 zelena
 income hover: #63f0a9b0
+button:63f0a9b0
 
 crvena:
 #FB4B4E
