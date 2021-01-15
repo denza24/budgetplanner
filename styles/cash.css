@@ -13,12 +13,13 @@ body{
     padding: 50px 0;
     text-align: center;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 32px;
     color: #fff;
+   text-transform: uppercase;
   }
 
 header{
-  background-color: #008db1;
+  background-color: #29a5d8;
 }
 .container{
     
@@ -114,7 +115,7 @@ header{
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding: 20%; /* Location of the box */
+    padding: 5%; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -127,16 +128,16 @@ header{
   /* Modal Content */
   .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: #fff;
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 100%;
+    width: 60%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
   }
   
   /* Add Animation */

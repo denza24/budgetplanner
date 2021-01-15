@@ -3,6 +3,7 @@
 	position: fixed;
 	transition: width 0.2s ease;
 	z-index:10000;
+	height: 100vh!important;
 }
 
 .sidebar nav {
