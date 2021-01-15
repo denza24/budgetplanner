@@ -45,7 +45,7 @@ a {
 
 button {
 	border-radius: 20px;
-	background-color: #e70004;
+	background-color:#32CD32;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -64,7 +64,7 @@ button:focus {
 }
 
 button.ghost {
-	background-color: transparent;
+	background-color: #1E90FF;
 	border-color: #FFFFFF;
 }
 
