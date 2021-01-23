@@ -159,3 +159,11 @@
     text-align: center;
     display: inline-block;
   }
+
+  .btnRemove{
+    background-color: red!important;
+    color:white!important;
+  }
+  .total{
+    margin-left:10%!important;
+  }
